@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './core/reportWebVitals';
 import {ThemeProvider} from "styled-components";
-import {Content, Title, Card} from "./components";
+import {Content, Title, Card, Grid} from "./components";
 
 import {GlobalStyles, theme} from './styles'
 ReactDOM.render(
@@ -10,8 +10,10 @@ ReactDOM.render(
         <ThemeProvider theme={theme}>
             <GlobalStyles />
             <Content>
-                <Title>SUdoku</Title>
-                <Card>WIP</Card>
+                <Title>Sudoku</Title>
+                <Card>
+                    <Grid />
+                </Card>
             </Content>
         </ThemeProvider>
     </Fragment>,
